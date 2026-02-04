@@ -12,6 +12,17 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+
+REST API Endpoints:
+    The API is accessible via the following URL format for GitHub Codespaces:
+    https://$CODESPACE_NAME-8000.app.github.dev/api/[endpoint]/
+    
+    Available endpoints:
+    - /api/users/
+    - /api/teams/
+    - /api/activities/
+    - /api/leaderboard/
+    - /api/workouts/
 """
 from django.contrib import admin
 from django.urls import path, include
