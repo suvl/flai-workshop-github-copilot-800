@@ -58,7 +58,69 @@ function App() {
                   <h1 className="display-4">Welcome to OctoFit Tracker</h1>
                   <p className="lead">Track your fitness activities, compete with teams, and achieve your goals!</p>
                   <hr className="my-4" style={{borderColor: 'rgba(255,255,255,0.3)'}} />
-                  <p className="mb-0">Use the navigation menu above to explore different sections of the app.</p>
+                  <p className="mb-0">Choose a section below to get started</p>
+                </div>
+                
+                <div className="row mt-5">
+                  <div className="col-md-6 col-lg-3 mb-4">
+                    <Link to="/users" className="text-decoration-none">
+                      <div className="card text-center h-100 home-card">
+                        <div className="card-body d-flex flex-column justify-content-center">
+                          <div className="display-1 mb-3">👤</div>
+                          <h3 className="card-title">Users</h3>
+                          <p className="card-text text-muted">Manage user profiles and team assignments</p>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  
+                  <div className="col-md-6 col-lg-3 mb-4">
+                    <Link to="/activities" className="text-decoration-none">
+                      <div className="card text-center h-100 home-card">
+                        <div className="card-body d-flex flex-column justify-content-center">
+                          <div className="display-1 mb-3">🏃</div>
+                          <h3 className="card-title">Activities</h3>
+                          <p className="card-text text-muted">View and track fitness activities</p>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  
+                  <div className="col-md-6 col-lg-3 mb-4">
+                    <Link to="/teams" className="text-decoration-none">
+                      <div className="card text-center h-100 home-card">
+                        <div className="card-body d-flex flex-column justify-content-center">
+                          <div className="display-1 mb-3">👥</div>
+                          <h3 className="card-title">Teams</h3>
+                          <p className="card-text text-muted">Explore teams and their members</p>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  
+                  <div className="col-md-6 col-lg-3 mb-4">
+                    <Link to="/leaderboard" className="text-decoration-none">
+                      <div className="card text-center h-100 home-card">
+                        <div className="card-body d-flex flex-column justify-content-center">
+                          <div className="display-1 mb-3">🏆</div>
+                          <h3 className="card-title">Leaderboard</h3>
+                          <p className="card-text text-muted">See who's leading the competition</p>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  
+                  <div className="col-md-6 col-lg-3 mb-4">
+                    <Link to="/workouts" className="text-decoration-none">
+                      <div className="card text-center h-100 home-card">
+                        <div className="card-body d-flex flex-column justify-content-center">
+                          <div className="display-1 mb-3">💪</div>
+                          <h3 className="card-title">Workouts</h3>
+                          <p className="card-text text-muted">Get personalized workout suggestions</p>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
             } />
